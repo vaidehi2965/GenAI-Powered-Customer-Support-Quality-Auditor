@@ -23,8 +23,7 @@ genai_support_auditor/
 │
 ├── audio_files/              # Input audio files
 ├── transcripts/              # Generated transcripts                   
-├── transcribe.py             # Speech-to-text module
-├── scoring.py                # LLM scoring module
+├── transcribe.py             # Speech-to-text module                
 ├── requirements.txt
 └── README.md
 
@@ -92,7 +91,6 @@ scores/audit_scores.csv
 ## 📊 Output
 
 1. transcripts.csv – Contains converted speech text
-2. audit_scores.csv – Contains AI-generated evaluation scores
 
 ---
 
