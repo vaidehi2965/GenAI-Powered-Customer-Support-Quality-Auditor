@@ -1,5 +1,4 @@
 # GenAI-Powered-Customer-Support-Quality-Auditor
-# GenAI Powered Customer Support Auditor
 
 ## 📌 Overview
 This project implements an AI-powered system to audit customer support calls. 
