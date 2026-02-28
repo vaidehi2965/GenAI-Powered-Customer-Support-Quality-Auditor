@@ -21,8 +21,9 @@ and evaluates call quality using an LLM scoring engine.
 
 genai_support_auditor/
 │
-├── audio_files/              # Input audio files
-├── transcripts/              # Generated transcripts                   
+├── Datasets/                 # Input audio files
+├── transcripts/              # Generated transcripts
+    groq_auditor.py            # LLM scoring                  
 ├── transcribe.py             # Speech-to-text module                
 ├── requirements.txt
 └── README.md
@@ -59,10 +60,12 @@ transcripts/transcripts.csv
 
 ### Step 2: LLM Scoring
 
-python scoring.py
+python groq_auditor.py
 
 This generates:
-scores/audit_scores.csv
+emapthy
+compliance
+Quality scores
 
 ---
 
@@ -73,7 +76,7 @@ scores/audit_scores.csv
 
 ## 🧠 Milestone 2
 - Implemented LLM-based scoring engine
-- Evaluated transcripts for empathy, compliance, and issue resolution
+- Evaluated transcripts for empathy, compliance, and quality score
 - Generated structured audit report
 
 ---
@@ -91,6 +94,7 @@ scores/audit_scores.csv
 ## 📊 Output
 
 1. transcripts.csv – Contains converted speech text
+2.LLM scoring - empathy,compliance and quality scores based on agent's behaviour or tone
 
 ---
 
@@ -100,3 +104,4 @@ scores/audit_scores.csv
 - Real-time streaming transcription
 - Dashboard visualization
 - RAG-based compliance verification
+
