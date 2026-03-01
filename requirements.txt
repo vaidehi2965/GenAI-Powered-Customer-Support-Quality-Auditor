@@ -17,3 +17,5 @@ psycopg2-binary
 langchain
 langchain-community
 sqlalchemy
+altair==4.2.2
+
