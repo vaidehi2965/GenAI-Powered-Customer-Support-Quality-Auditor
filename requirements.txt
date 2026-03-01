@@ -3,4 +3,17 @@ pandas
 openai
 soundfile
 torch
+
 datasets
+streamlit
+sqlalchemy
+pinecone-client
+sentence-transformers
+groq
+python-dotenv
+pandas
+whisper
+psycopg2-binary
+langchain
+langchain-community
+sqlalchemy
