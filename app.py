@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 
 import streamlit as st
-from auditor.db import SessionLocal, CallRecord
+from database.auditor import SessionLocal, CallRecord
 from groq_auditor import evaluate_call
 
 st.set_page_config(page_title="Supervisor Dashboard", layout="wide")
@@ -34,3 +34,4 @@ for call in calls:
             st.subheader("AI Evaluation")
 
             st.success(call.feedback)
+
