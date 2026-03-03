@@ -1,10 +1,9 @@
-streamlit==1.35.0
-altair==4.2.2
-sqlalchemy
-python-dotenv
+streamlit
+langchain
+langchain-community
+langchain-text-splitters
+sentence-transformers
 groq
-pinecone-client
-openai
-imghdr
-
+python-dotenv
+chromadb
 
