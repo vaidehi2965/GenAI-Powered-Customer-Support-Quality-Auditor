@@ -19,4 +19,5 @@ def save_audit(transcript, result):
     )
 
     conn.commit()
+
     conn.close()
