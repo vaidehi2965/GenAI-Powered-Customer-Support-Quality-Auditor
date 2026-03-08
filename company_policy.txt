@@ -1,0 +1,5 @@
+1. Agents must greet customers politely.
+2. No abusive language allowed.
+3. Sensitive data must not be disclosed.
+4. Agents must show empathy.
+5. Call must follow resolution protocol.
