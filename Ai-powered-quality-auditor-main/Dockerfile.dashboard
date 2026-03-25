@@ -1,0 +1,40 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy application
+COPY frontend ./frontend
+COPY backend ./backend
+COPY .env.example .env
+
+# Create Streamlit config directory
+RUN mkdir -p ~/.streamlit
+
+# Create Streamlit config
+RUN echo "\
+[general]\n\
+email = \"\"\n\
+\n\
+[client]\n\
+showErrorDetails = true\n\
+\n\
+[logger]\n\
+level = \"info\"\n\
+" > ~/.streamlit/config.toml
+
+# Expose port
+EXPOSE 8501
+
+# Run Streamlit dashboard
+CMD ["streamlit", "run", "frontend/new_dashboard.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.headless=true"]
