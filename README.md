@@ -1,7 +1,5 @@
 # AI Quality Auditor
 
-**Version:** 2.0.0 | **Status:** Production-Ready
-
 A comprehensive, enterprise-grade AI-powered quality auditing system for analyzing customer service interactions, evaluating compliance, and providing actionable insights for improvement.
 
 ## Overview
