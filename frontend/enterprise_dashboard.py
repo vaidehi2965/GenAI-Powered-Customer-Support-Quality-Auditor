@@ -21,15 +21,10 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import json
 import logging
+import os
 import requests
 import time
 from typing import Dict, List, Any, Optional, Tuple
-
-import os
-
-CONFIG = {
-    "api_url": os.getenv("API_BASE_URL", "http://localhost:8000"),
-}
 
 # ==================== PAGE CONFIG ====================
 
@@ -288,7 +283,7 @@ def init_session_state():
     """Initialize all session state variables for enterprise tracking"""
     defaults = {
         # API Configuration
-        "api_url": os.getenv("API_BASE_URL", "http://localhost:8000"),
+        "api_url": os.getenv("API_URL", "http://localhost:8000"),
         "api_connected": False,
         
         # Data Intake
