@@ -164,4 +164,5 @@ Control system behavior by editing `.env` or exporting environment variables:
 
 - Vaidehi 
 - Siri Reddy
+- Gayathri S
   
