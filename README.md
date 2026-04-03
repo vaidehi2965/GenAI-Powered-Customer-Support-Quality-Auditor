@@ -1,3 +1,4 @@
+
 # AI Quality Auditor
 
 A comprehensive, enterprise-grade AI-powered quality auditing system for analyzing customer service interactions, evaluating compliance, and providing actionable insights for improvement.
@@ -158,3 +159,9 @@ Control system behavior by editing `.env` or exporting environment variables:
 - Roll out advanced voice metric analysis (including tone, clarity, and pacing).
 - Support GPU hardware acceleration for faster transcription workflows.
 - Introduce optimized embedding cache structures and streaming JSON responses.
+
+## Contributors
+
+- Vaidehi 
+- Siri Reddy
+  
